@@ -1,0 +1,101 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Windbird front board"
+Date "2021-12-20"
+Rev "0.1"
+Comp "OpenWindMap"
+Comment1 "Legacy from Pioupiou"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PARTS:GND #PWR01
+U 1 1 5478A189
+P 7150 2900
+F 0 "#PWR01" H 7150 2900 30  0001 C CNN
+F 1 "GND" H 7150 2830 30  0001 C CNN
+F 2 "" H 7150 2900 60  0000 C CNN
+F 3 "" H 7150 2900 60  0000 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PARTS:C C6
+U 1 1 5478A251
+P 5750 3150
+F 0 "C6" H 5750 3250 40  0000 L CNN
+F 1 "100nF" H 5756 3065 40  0000 L CNN
+F 2 "" H 5788 3000 30  0000 C CNN
+F 3 "" H 5750 3150 60  0000 C CNN
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 5150 2450 0    60   ~ 0
+Capteur vitesse hélice
+Wire Notes Line
+	5150 2500 7850 2500
+Wire Notes Line
+	7850 2500 7850 3600
+Wire Notes Line
+	7850 3600 5150 3600
+Wire Notes Line
+	5150 3600 5150 2500
+Wire Wire Line
+	5750 2850 5750 2950
+$Comp
+L PARTS:GND #PWR012
+U 1 1 54E364D2
+P 5750 3450
+F 0 "#PWR012" H 5750 3450 30  0001 C CNN
+F 1 "GND" H 5750 3380 30  0001 C CNN
+F 2 "" H 5750 3450 60  0000 C CNN
+F 3 "" H 5750 3450 60  0000 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2900
+$Comp
+L PARTS:CONN_1 P11
+U 1 1 54E74D32
+P 7250 3050
+F 0 "P11" H 7330 3050 40  0000 L CNN
+F 1 "CONN_1" H 7250 3105 30  0001 C CNN
+F 2 "" H 7250 3050 60  0000 C CNN
+F 3 "" H 7250 3050 60  0000 C CNN
+	1    7250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PARTS:CONN_1 P9
+U 1 1 54E74D50
+P 5550 2850
+F 0 "P9" H 5630 2850 40  0000 L CNN
+F 1 "CONN_1" H 5550 2905 30  0001 C CNN
+F 2 "" H 5550 2850 60  0000 C CNN
+F 3 "" H 5550 2850 60  0000 C CNN
+	1    5550 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3350 5750 3450
+Wire Wire Line
+	5700 2850 5750 2850
+Wire Notes Line
+	6850 2700 6850 3350
+Wire Notes Line
+	6850 3350 5950 3350
+Wire Notes Line
+	5950 3350 5950 2700
+Wire Notes Line
+	5950 2700 6850 2700
+Text Notes 6250 3000 0    50   ~ 0
+TMR1202
+$EndSCHEMATC
