@@ -9,9 +9,9 @@ This repository contains the electronic parts of the Windbird wind sensor.
 - PARTS.lib   : Kicad libraries
 - PARTS.dcm   : Kicad libraries
 
-The development branch is named 'main'
+The development branch is named **'main'**
 
-Tag list:
+**Tag list:**
 - LEGACY : more or less the initial schematic inherited from Pioupiou
 
 
