@@ -19,8 +19,10 @@ Tag list:
 ## Reminders about versioning with git
 
 - To collaborate, initiate the project with:
-    git clone https://github.com/windbird-sensor/windbird-electronics
+
+  git clone https://github.com/windbird-sensor/windbird-electronics
     
 - To share changes:
-    git pull --rebase origin main  
-    git push origin main  
+
+  git pull --rebase origin main  
+  git push origin main  
