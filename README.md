@@ -1,13 +1,15 @@
 # windbird-electronics
+
+# THIS IS A WORK IN PROGRESS
+
 This repository contains the electronic parts of the Windbird wind sensor.
 
-- main/       : contains the main PCB 
-- front/      : contains the PCB for the rotation sensor
-- tail/       : contains the PCB for the tail and antenna
-- datasheets/ : components datasheets
-- Parts.ods   : parts list, refs, suppliers and price
-- PARTS.lib   : Kicad libraries
-- PARTS.dcm   : Kicad libraries
+- main/            : contains the main PCB 
+- front/           : contains the PCB for the rotation sensor
+- tail/            : contains the PCB for the tail and antenna
+- datasheets/      : components datasheets
+- Parts.ods        : parts list, refs, suppliers and price
+- kicad_libraries/ : Kicad libraries
 
 The development branch is named **'main'**
 
