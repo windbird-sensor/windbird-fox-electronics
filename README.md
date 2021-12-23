@@ -26,3 +26,9 @@ The development branch is named **'main'**
 
   git pull --rebase origin main  
   git push origin main  
+
+- If you added tags (git tag TAG COMMIT) do the push with: 
+
+  git push origin main --tags
+
+
