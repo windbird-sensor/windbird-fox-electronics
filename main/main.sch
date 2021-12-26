@@ -14,7 +14,7 @@ Comment3 "reviewed by : Nicolas Baldeck"
 Comment4 ""
 $EndDescr
 Text Label 7550 1250 0    60   ~ 0
-V25
+VMAIN
 Text Notes 8700 1950 0    60   ~ 0
 Compass
 Text Notes 1850 6600 0    60   ~ 0
@@ -248,7 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2550 2200 2550
 Text Label 1250 2550 2    60   ~ 0
-V25
+VMAIN
 Text Label 3700 1600 0    60   ~ 0
 RF
 Wire Wire Line
@@ -347,7 +347,7 @@ RX
 Text Label 3700 2050 0    60   ~ 0
 RX
 Text Label 3700 2350 0    60   ~ 0
-GPSVIO
+GPS_ON
 $Comp
 L _WINDBIRD:GND #PWR017
 U 1 1 54FF152A
@@ -794,7 +794,7 @@ $EndComp
 Text Label 6300 3850 0    60   ~ 0
 PULSE_SW
 Text Label 6300 3950 0    60   ~ 0
-V25
+VMAIN
 $Comp
 L _WINDBIRD:CONN_3 K1
 U 1 1 5501A2DA
@@ -1051,7 +1051,7 @@ Connection ~ 5400 5400
 Wire Wire Line
 	5400 5400 6050 5400
 Text Label 5300 5700 2    50   ~ 0
-GPSVIO
+GPS_ON
 Wire Wire Line
 	5300 5700 6050 5700
 Wire Wire Line
