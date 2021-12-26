@@ -29,10 +29,12 @@ jobs:
           image: productize/kicad-automation-scripts:latest
           options: -v ${{ github.workspace }}:/work
           run: |
+            cd /work/main
+            ehco "Loading Kicad libraries"
+            echo -e "(sym_lib_table\n(lib (name _WINDBIRD)(type Legacy)(uri /work/kicad_libraries/windbird.lib)(options "")(descr ""))\n) > ./sym-lib-table
             echo "Generating main.pdf"
-            python -m kicad-automation.eeschema.schematic export --all_pages --file_format pdf /work/main/main.sch /work/main/
-            rm /work/main/export_schematic_screencast.ogv
-
+            python -m kicad-automation.eeschema.schematic export --all_pages --file_format pdf main.sch ./
+            
       - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"
