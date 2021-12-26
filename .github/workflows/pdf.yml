@@ -1,0 +1,46 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: addnab/docker-run-action@v3
+        with:
+          image: productize/kicad-automation-scripts:latest
+          options: -v ${{ github.workspace }}:/work
+          run: |
+            echo "Generating main.pdf"
+            python -m kicad-automation.eeschema.schematic export --all_pages --file_format pdf /work/main/main.sch /work/main/
+            rm /work/main/export_schematic_screencast.ogv
+
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          # Stage the file, commit and push
+          git add main/main.pdf
+          git commit -m "auto update pdf schematics from commit $GITHUB_SHA"
+          git push origin $GITHUB_REF
