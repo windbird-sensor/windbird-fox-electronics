@@ -30,7 +30,7 @@ jobs:
           run: |
             cd /work/main
             echo "Loading Kicad libraries"
-            echo -e '(sym_lib_table\n(lib (name _WINDBIRD)(type Legacy)(uri /work/kicad_libraries/windbird.lib)(options "")(descr ""))\n)' > ./sym-lib-table
+            echo -e "(sym_lib_table\n(lib (name _WINDBIRD)(type Legacy)(uri /work/kicad_libraries/windbird.lib)(options \"\")(descr \"\"))\n)" > ./sym-lib-table
             echo "Generating main.pdf"
             python -m kicad-automation.eeschema.schematic export --all_pages --file_format pdf main.sch ./
             
