@@ -786,7 +786,7 @@ Wire Notes Line
 	8350 2000 11100 2000
 Wire Notes Line
 	8350 4200 11100 4200
-Text Notes 3450 -300 0    236  ~ 0
+Text Notes 5800 325  0    236  ~ 0
 THIS IS A WORK IN PROGRESS!
 $Comp
 L _WINDBIRD:GND #PWR?
