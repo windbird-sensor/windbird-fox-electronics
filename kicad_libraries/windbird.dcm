@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LED_Dual_ACA
+D Dual LED, common cathode on pin 2
+K LED diode bicolor dual
+F ~
+$ENDCMP
+#
 $CMP Q_NMOS_DGS
 D N-MOSFET transistor, drain/gate/source
 K transistor NMOS N-MOS N-MOSFET

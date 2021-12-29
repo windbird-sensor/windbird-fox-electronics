@@ -150,9 +150,7 @@ Text Notes 900  1950 0    60   ~ 0
 Microprocessor + SIGFOX Modem
 Text Notes 850  4650 0    60   ~ 0
 RF Circuit protection 
-Text Label 3725 2700 0    60   ~ 0
-LED_RED
-Text Label 9000 1200 2    60   ~ 0
+Text Label 9125 1125 2    60   ~ 0
 LED_RED
 Wire Notes Line
 	1850 7650 2950 7650
@@ -187,8 +185,6 @@ Wire Notes Line
 	4750 6350 4750 4700
 Wire Notes Line
 	11100 4200 11100 2000
-Wire Wire Line
-	10050 1200 10500 1200
 Text Notes 8350 650  0    60   ~ 0
 Led
 Wire Notes Line
@@ -294,16 +290,14 @@ $EndComp
 $Comp
 L _WINDBIRD:GND #PWR011
 U 1 1 54E364C3
-P 10500 1450
-F 0 "#PWR011" H 10500 1450 30  0001 C CNN
-F 1 "GND" H 10500 1380 30  0001 C CNN
-F 2 "" H 10500 1450 60  0000 C CNN
-F 3 "" H 10500 1450 60  0000 C CNN
-	1    10500 1450
+P 10800 1325
+F 0 "#PWR011" H 10800 1325 30  0001 C CNN
+F 1 "GND" H 10800 1255 30  0001 C CNN
+F 2 "" H 10800 1325 60  0000 C CNN
+F 3 "" H 10800 1325 60  0000 C CNN
+	1    10800 1325
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10500 1200 10500 1450
 Wire Wire Line
 	1000 5250 1050 5250
 Wire Wire Line
@@ -430,21 +424,6 @@ NoConn ~ 7800 5150
 NoConn ~ 7800 5300
 NoConn ~ 7800 5450
 NoConn ~ 7800 5750
-$Comp
-L _WINDBIRD:R R7
-U 1 1 55004E7E
-P 9350 1200
-F 0 "R7" V 9430 1200 40  0000 C CNN
-F 1 "68" V 9357 1201 40  0000 C CNN
-F 2 "" V 9280 1200 30  0000 C CNN
-F 3 "~" H 9350 1200 30  0000 C CNN
-	1    9350 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9100 1200 9000 1200
-Wire Wire Line
-	9600 1200 9650 1200
 NoConn ~ 3725 3500
 NoConn ~ 7800 5600
 NoConn ~ 9200 5900
@@ -452,7 +431,6 @@ Wire Wire Line
 	9200 5750 9350 5750
 Wire Wire Line
 	1925 3500 2225 3500
-NoConn ~ 3725 2800
 Wire Wire Line
 	1400 5900 1400 5950
 Wire Wire Line
@@ -640,17 +618,6 @@ Wire Wire Line
 	2450 7500 2300 7500
 Text Notes 6550 3100 0    39   ~ 0
 Sel 1 1 1 gives 2.5V output\nBy setting VSEL1=0, we have 2.4V\nBy setting VSEL2=0, we have 2.3V\n(can't be left floating)
-$Comp
-L _WINDBIRD:LED D2
-U 1 1 56E6AD5E
-P 9850 1200
-F 0 "D2" H 9850 1350 50  0000 C CNN
-F 1 "LTL1CHKEKNN" H 9850 1050 50  0000 C CNN
-F 2 "" H 9850 1200 50  0001 C CNN
-F 3 "" H 9850 1200 50  0000 C CNN
-	1    9850 1200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6350 4050 6350 4150
 Wire Wire Line
@@ -4881,4 +4848,62 @@ Wire Wire Line
 Wire Wire Line
 	5025 1700 5025 1400
 Connection ~ 5025 1400
+$Comp
+L _WINDBIRD:LED_Dual_ACA D?
+U 1 1 61D73355
+P 10425 1225
+F 0 "D?" H 10425 1650 50  0000 C CNN
+F 1 "W115WSURKMGKW" H 10425 1559 50  0000 C CNN
+F 2 "" H 10425 1225 50  0001 C CNN
+F 3 "~" H 10425 1225 50  0001 C CNN
+	1    10425 1225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10725 1225 10800 1225
+Wire Wire Line
+	10800 1225 10800 1325
+$Comp
+L _WINDBIRD:R R?
+U 1 1 61D9298E
+P 9875 1325
+F 0 "R?" V 9955 1325 40  0000 C CNN
+F 1 "10" V 9882 1326 40  0000 C CNN
+F 2 "" V 9805 1325 30  0000 C CNN
+F 3 "~" H 9875 1325 30  0000 C CNN
+	1    9875 1325
+	0    -1   -1   0   
+$EndComp
+Text Label 9125 1325 2    60   ~ 0
+LED_GREEN
+Text Label 3725 2700 0    60   ~ 0
+LED_RED
+Text Label 3725 2800 0    60   ~ 0
+LED_GREEN
+$Comp
+L _WINDBIRD:R R7
+U 1 1 55004E7E
+P 9875 1125
+F 0 "R7" V 9955 1125 40  0000 C CNN
+F 1 "10" V 9882 1126 40  0000 C CNN
+F 2 "" V 9805 1125 30  0000 C CNN
+F 3 "~" H 9875 1125 30  0000 C CNN
+	1    9875 1125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L _WINDBIRD:R R?
+U 1 1 61DCEB24
+P 9375 1125
+F 0 "R?" V 9455 1125 40  0000 C CNN
+F 1 "10" V 9382 1126 40  0000 C CNN
+F 2 "" V 9305 1125 30  0000 C CNN
+F 3 "~" H 9375 1125 30  0000 C CNN
+	1    9375 1125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9125 1325 9625 1325
+Text Notes 8425 1725 0    50   ~ 0
+RED: 17.5mA @ 1.95V / GREEN: 20mA @ 2.1V\nResistor values are calculated for VMAIN = 2.3V.\nThey must be changed for VMAIN = 2.4 or 2.5V, or the leds will fry.
 $EndSCHEMATC
