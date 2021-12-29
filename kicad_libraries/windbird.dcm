@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Q_NMOS_DGS
+D N-MOSFET transistor, drain/gate/source
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
 $CMP Q_PMOS_DGS
 D P-MOSFET transistor, drain/gate/source
 K transistor PMOS P-MOS P-MOSFET

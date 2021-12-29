@@ -1032,7 +1032,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 1900 5800 1900
 Wire Wire Line
-	5650 1125 6300 1125
+	5650 1125 6075 1125
 Text Notes 2750 800  0    39   ~ 0
 P MOSFET for reverse voltage protection\nVGS threshold < minimum VBAT under load\nand max admissible VGS > 3.6V
 Wire Wire Line
@@ -1081,8 +1081,6 @@ VCAP
 Text Label 4750 1125 0    60   ~ 0
 VBAT
 Wire Wire Line
-	4600 1125 5050 1125
-Wire Wire Line
 	6725 1325 6725 1375
 $Comp
 L _WINDBIRD:GND #PWR0110
@@ -1096,35 +1094,18 @@ F 3 "" H 6725 1375 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	6175 1550 6175 1125
-Wire Notes Line
 	1050 975  1050 1225
-Wire Wire Line
-	5050 1125 5150 1125
-Connection ~ 5050 1125
-Wire Wire Line
-	5050 1550 5150 1550
-Wire Wire Line
-	5050 1125 5050 1550
-Text Notes 5725 1800 0    39   ~ 0
-TODO:\nclosed when\nVCAP < 2.5V
-Wire Notes Line
-	5900 1550 6175 1550
-Wire Notes Line
-	5775 1475 5925 1475
-Wire Notes Line
-	5775 1550 5775 1475
-Wire Notes Line
-	5650 1550 5775 1550
+Text Notes 5950 1700 0    39   ~ 0
+closed when\nVCAP < 2.5V
 $Comp
 L _WINDBIRD:R R10
 U 1 1 6208DA56
-P 5400 1550
-F 0 "R10" V 5500 1550 40  0000 C CNN
-F 1 "50" V 5400 1550 40  0000 C CNN
-F 2 "" V 5330 1550 30  0000 C CNN
-F 3 "" H 5400 1550 30  0000 C CNN
-	1    5400 1550
+P 5400 1400
+F 0 "R10" V 5500 1400 40  0000 C CNN
+F 1 "50" V 5400 1400 40  0000 C CNN
+F 2 "" V 5330 1400 30  0000 C CNN
+F 3 "" H 5400 1400 30  0000 C CNN
+	1    5400 1400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -4866,6 +4847,38 @@ Wire Wire Line
 Connection ~ 9350 6150
 Wire Wire Line
 	9350 6150 9400 6150
-Text Notes 5150 1400 0    28   ~ 0
+Text Notes 6125 1025 0    28   ~ 0
 cap charge must be done in 140s so 120R\ndV=50mA x 6.5s / 1F = 0.325V\nso max current is 0.325/120=2.7mA
+$Comp
+L _WINDBIRD:Q_NMOS_DGS Q?
+U 1 1 61CD9199
+P 5850 1500
+F 0 "Q?" V 6192 1500 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 6101 1500 50  0000 C CNN
+F 2 "" H 6050 1600 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1125 5025 1125
+Wire Wire Line
+	5150 1400 5025 1400
+Wire Wire Line
+	5025 1400 5025 1125
+Connection ~ 5025 1125
+Wire Wire Line
+	5025 1125 5150 1125
+Wire Wire Line
+	6075 1400 6050 1400
+Wire Wire Line
+	6075 1400 6075 1125
+Connection ~ 6075 1125
+Wire Wire Line
+	6075 1125 6300 1125
+Wire Wire Line
+	5850 1700 5025 1700
+Wire Wire Line
+	5025 1700 5025 1400
+Connection ~ 5025 1400
 $EndSCHEMATC
