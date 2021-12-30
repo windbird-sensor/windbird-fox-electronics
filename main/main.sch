@@ -5094,15 +5094,9 @@ NoConn ~ 2400 6950
 NoConn ~ 2400 7250
 NoConn ~ 2400 7350
 Wire Notes Line
-	1900 6750 1030 6750
-Wire Notes Line
-	1040 6970 1450 6970
-Wire Notes Line
 	1450 6970 1450 6850
 Wire Notes Line
 	1450 6850 1900 6850
-Wire Notes Line
-	1040 7040 1500 7040
 Wire Notes Line
 	1500 7040 1500 6950
 Wire Notes Line
@@ -5111,8 +5105,6 @@ Wire Notes Line
 	1900 7050 1560 7050
 Wire Notes Line
 	1560 7050 1560 7260
-Wire Notes Line
-	1560 7260 1040 7260
 Wire Notes Line rgb(0, 132, 0)
 	1410 6820 1410 6630
 Wire Notes Line rgb(0, 132, 0)
@@ -5374,8 +5366,16 @@ EF BE FB E5 2F 7F D9 DD C6 1F 51 88 C7 F0 FF A4 A5 A5 FD F6 B7 BF FD D9 CF 7E 76
 7B 9D 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Wire Notes Line rgb(0, 132, 0)
-	1380 6820 1090 6820
 Wire Notes Line style solid rgb(0, 132, 0)
 	1090 6810 1090 6830
+Wire Notes Line
+	1900 6750 1030 6750
+Wire Notes Line
+	1450 6970 1030 6970
+Wire Notes Line
+	1500 7040 1030 7040
+Wire Notes Line
+	1560 7260 1020 7260
+Wire Notes Line rgb(0, 132, 0)
+	1410 6820 1090 6820
 $EndSCHEMATC
