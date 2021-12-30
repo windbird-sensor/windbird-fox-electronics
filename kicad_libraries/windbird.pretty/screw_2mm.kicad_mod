@@ -1,0 +1,10 @@
+(module screw_2mm (layer F.Cu) (tedit 61CDB778)
+  (fp_text reference SCREW (at 0 4) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value 2mm (at 0 6) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask F.SilkS)
+    (solder_mask_margin 1.5) (clearance 1.5))
+)
