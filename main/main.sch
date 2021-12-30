@@ -646,7 +646,7 @@ F 1 "VS2" V 5845 2568 50  0000 L CNN
 F 2 "" H 5800 2500 50  0001 C CNN
 F 3 "~" H 5800 2500 50  0001 C CNN
 	1    5800 2500
-	0    -1   1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L _WINDBIRD:SolderJumper_3_Bridged12 JP?
