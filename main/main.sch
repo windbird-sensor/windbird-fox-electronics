@@ -122,7 +122,7 @@ Wire Wire Line
 	2025 3550 2025 3400
 Wire Wire Line
 	2025 3400 2225 3400
-Text Label 1275 3400 2    60   ~ 0
+Text Label 1000 3400 2    60   ~ 0
 VMAIN
 Text Label 3725 2450 0    60   ~ 0
 RF
@@ -140,7 +140,6 @@ Wire Wire Line
 	2125 4050 2125 4150
 Wire Wire Line
 	2125 4150 2125 4250
-Connection ~ 2025 3400
 Text Label 3725 3000 0    60   ~ 0
 TD_TX
 $Comp
@@ -4348,7 +4347,7 @@ Text Notes 3550 1800 0    39   ~ 0
 Text Notes 5125 1050 0    28   ~ 0
 120R because cap charge must be done in 140s\nThen dV=50mA x 6.5s / 1F = 0.325V\nso max current is 0.325/120=2.7mA
 Wire Wire Line
-	4600 1125 5025 1125
+	4600 1125 4650 1125
 Wire Wire Line
 	5150 1400 5025 1400
 Wire Wire Line
@@ -4743,8 +4742,6 @@ Text Notes 6050 7150 0    50   ~ 0
 VIHmin =0.7*VMAIN\nVIHmax=VMAIN
 Wire Wire Line
 	3550 1125 4600 1125
-Wire Wire Line
-	2850 1125 3150 1125
 Text Label 1900 6750 2    60   ~ 0
 VMAIN
 Text Label 1900 6950 2    60   ~ 0
@@ -5262,8 +5259,6 @@ Wire Notes Line
 	1560 7260 1020 7260
 Wire Notes Line rgb(0, 132, 0)
 	1410 6820 1090 6820
-Wire Wire Line
-	1275 3400 2025 3400
 $Comp
 L _WINDBIRD:R R8
 U 1 1 547F2FF5
@@ -5313,8 +5308,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 1125 6300 2100
 Connection ~ 6300 1125
-Wire Wire Line
-	6300 1125 6725 1125
 Text Notes 5050 1550 0    50   ~ 0
 1/2W !
 $Comp
@@ -5408,4 +5401,41 @@ F 3 "" H 7100 5100 50  0001 C CNN
 	2    6900 5000
 	0    1    -1   0   
 $EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61DCEAEF
+P 4650 1125
+F 0 "TP1" H 4708 1243 50  0000 L CNN
+F 1 "TestPoint" H 4708 1152 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4850 1125 50  0001 C CNN
+F 3 "~" H 4850 1125 50  0001 C CNN
+	1    4650 1125
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 1125
+Wire Wire Line
+	4650 1125 5025 1125
+Text Label 4025 1125 0    50   ~ 0
+VI
+Wire Wire Line
+	1000 3400 1125 3400
+Connection ~ 2025 3400
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61E40252
+P 1125 3400
+F 0 "TP2" H 1183 3518 50  0000 L CNN
+F 1 "TestPoint" H 1183 3427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1325 3400 50  0001 C CNN
+F 3 "~" H 1325 3400 50  0001 C CNN
+	1    1125 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1125 3400
+Wire Wire Line
+	1125 3400 2025 3400
+Wire Wire Line
+	2850 1125 3150 1125
+Wire Wire Line
+	6300 1125 6725 1125
 $EndSCHEMATC
