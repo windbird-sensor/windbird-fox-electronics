@@ -2406,7 +2406,7 @@ F 3 "~" H 6550 5350 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 6000 5000 2    60   ~ 0
-VBAT
+VBAT_PROTECTED
 Wire Notes Line
 	4925 4725 4925 6375
 Wire Notes Line
@@ -3170,8 +3170,8 @@ $EndComp
 Connection ~ 4650 1125
 Wire Wire Line
 	4650 1125 5025 1125
-Text Label 4025 1125 0    50   ~ 0
-VI
+Text Label 3700 1125 0    50   ~ 0
+VBAT_PROTECTED
 Wire Wire Line
 	1000 3400 1125 3400
 Connection ~ 2025 3400
