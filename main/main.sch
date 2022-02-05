@@ -122,7 +122,7 @@ Wire Wire Line
 	2025 3550 2025 3400
 Wire Wire Line
 	2025 3400 2225 3400
-Text Label 1000 3400 2    60   ~ 0
+Text Label 1925 3400 2    60   ~ 0
 VMAIN
 Text Label 3725 2450 0    60   ~ 0
 RF
@@ -3173,23 +3173,6 @@ Wire Wire Line
 Text Label 3700 1125 0    50   ~ 0
 VBAT_PROTECTED
 Wire Wire Line
-	1000 3400 1125 3400
-Connection ~ 2025 3400
-$Comp
-L Connector:TestPoint TP2
-U 1 1 61E40252
-P 1125 3400
-F 0 "TP2" H 1183 3518 50  0000 L CNN
-F 1 "TestPoint" H 1183 3427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1325 3400 50  0001 C CNN
-F 3 "~" H 1325 3400 50  0001 C CNN
-	1    1125 3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 1125 3400
-Wire Wire Line
-	1125 3400 2025 3400
-Wire Wire Line
 	2850 1125 3150 1125
 Wire Wire Line
 	6300 1125 6725 1125
@@ -5444,4 +5427,7 @@ BD 2E 51 77 59 97 F5 AE D7 25 EA 2E EB B2 DE F5 BA 44 DD 65 5D D6 BB 5E 97 A8 BB
 F5 AE D7 FF 0F 0B 9D 95 27 14 80 55 CA 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	1925 3400 2025 3400
+Connection ~ 2025 3400
 $EndSCHEMATC
