@@ -2178,91 +2178,27 @@ Wire Wire Line
 	9125 1325 9625 1325
 Text Notes 8425 1725 0    50   ~ 0
 RED: 17.5mA @ 1.95V / GREEN: 20mA @ 2.1V\nResistor values are calculated for VMAIN = 2.3V.\nThey must be changed for VMAIN = 2.4 or 2.5V, or the leds will fry.
-Text Label 4900 6775 2    60   ~ 0
-TD_TX
-Text Label 6300 6775 0    60   ~ 0
-BOARD_TX
-$Comp
-L _WINDBIRD:R R13
-U 1 1 61E98D49
-P 5150 6950
-F 0 "R13" V 5075 6950 40  0000 C CNN
-F 1 "10k" V 5150 6950 40  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5080 6950 30  0001 C CNN
-F 3 "" H 5150 6950 30  0000 C CNN
-	1    5150 6950
-	0    1    1    0   
-$EndComp
-$Comp
-L _WINDBIRD:R R14
-U 1 1 61E9FF33
-P 5775 6950
-F 0 "R14" V 5675 7000 40  0000 R CNN
-F 1 "100k" V 5775 7025 40  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5705 6950 30  0001 C CNN
-F 3 "" H 5775 6950 30  0000 C CNN
-	1    5775 6950
-	0    1    1    0   
-$EndComp
 $Comp
 L _WINDBIRD:GND #PWR023
 U 1 1 61EA3340
-P 6025 7375
-F 0 "#PWR023" H 6025 7375 30  0001 C CNN
-F 1 "GND" H 6025 7305 30  0001 C CNN
-F 2 "" H 6025 7375 60  0000 C CNN
-F 3 "" H 6025 7375 60  0000 C CNN
-	1    6025 7375
+P 5625 7000
+F 0 "#PWR023" H 5625 7000 30  0001 C CNN
+F 1 "GND" H 5625 6930 30  0001 C CNN
+F 2 "" H 5625 7000 60  0000 C CNN
+F 3 "" H 5625 7000 60  0000 C CNN
+	1    5625 7000
 	1    0    0    -1  
 $EndComp
-$Comp
-L _WINDBIRD:R R16
-U 1 1 61EF510C
-P 5775 7300
-F 0 "R16" V 5675 7350 40  0000 R CNN
-F 1 "100k" V 5775 7375 40  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5705 7300 30  0001 C CNN
-F 3 "" H 5775 7300 30  0000 C CNN
-	1    5775 7300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5525 7125 5525 7300
-Wire Wire Line
-	6025 7375 6025 7300
-Wire Wire Line
-	6025 6950 6025 7125
-Wire Wire Line
-	5400 6950 5525 6950
 Text Label 3725 2900 0    60   ~ 0
 TD_RX
-Text Label 4900 6950 2    60   ~ 0
+Text Label 4825 6775 2    60   ~ 0
 GPS_TX
-Wire Wire Line
-	4900 7125 5400 7125
-Wire Wire Line
-	5400 7125 5400 6950
-Connection ~ 5400 6950
-$Comp
-L _WINDBIRD:R R15
-U 1 1 61EA2F37
-P 5775 7125
-F 0 "R15" V 5675 7175 40  0000 R CNN
-F 1 "100k" V 5775 7200 40  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5705 7125 30  0001 C CNN
-F 3 "" H 5775 7125 30  0000 C CNN
-	1    5775 7125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4900 6775 6300 6775
-Text Label 6300 6950 0    60   ~ 0
+Text Label 6150 6825 0    60   ~ 0
 TD_RX
-Connection ~ 6025 6950
 Wire Wire Line
-	6300 6950 6025 6950
-Text Label 4900 7125 2    60   ~ 0
-BOARD_RX
+	6150 6825 5875 6825
+Text Label 4825 6875 2    60   ~ 0
+FTDI_TX
 Text Notes 4500 6625 0    60   ~ 0
 Serial port
 $Comp
@@ -2399,7 +2335,7 @@ L _WINDBIRD:R R11
 U 1 1 61C9AD81
 P 6550 5350
 F 0 "R11" V 6630 5350 40  0000 C CNN
-F 1 "1M 1%" V 6557 5351 40  0000 C CNN
+F 1 "1M" V 6557 5351 40  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 5350 30  0001 C CNN
 F 3 "~" H 6550 5350 30  0000 C CNN
 	1    6550 5350
@@ -2440,17 +2376,6 @@ F 3 "" H 9550 5800 60  0000 C CNN
 	1    9550 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L _WINDBIRD:R R12
-U 1 1 61CE1FEC
-P 6550 6000
-F 0 "R12" V 6630 6000 40  0000 C CNN
-F 1 "1M 1%" V 6557 6001 40  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 6000 30  0001 C CNN
-F 3 "~" H 6550 6000 30  0000 C CNN
-	1    6550 6000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7100 5000 10000 5000
 Wire Wire Line
@@ -2489,12 +2414,6 @@ Text Notes 2830 7640 0    50   ~ 0
 Firmware update\nUSB to TTL (3.3V)\nFTDI TTL-232R-3V3
 Text Notes 680  7650 0    50   ~ 0
 J-LINK Probe\n(debug over SWD)
-Text Notes 4550 7575 0    50   ~ 0
-FT232R: VOHmin=2.2 VOHmax=3.2\nL80RE: VOHmin=2.4 VOHmax=3.1
-Text Notes 5150 6625 0    50   ~ 0
-DEBUG have priority over GPS
-Text Notes 6050 7150 0    50   ~ 0
-VIHmin =0.7*VMAIN\nVIHmax=VMAIN
 Wire Wire Line
 	3550 1125 4600 1125
 Text Label 1900 6750 2    60   ~ 0
@@ -2523,10 +2442,6 @@ F 3 "" H 2800 6625 60  0000 C CNN
 $EndComp
 Wire Notes Line rgb(0, 132, 0)
 	2400 6750 3025 6750
-Text Label 2400 7050 0    60   ~ 0
-BOARD_RX
-Text Label 2400 7150 0    60   ~ 0
-BOARD_TX
 $Bitmap
 Pos 3600 7000
 Scale 2.000000
@@ -5430,4 +5345,121 @@ $EndBitmap
 Wire Wire Line
 	1925 3400 2025 3400
 Connection ~ 2025 3400
+$Comp
+L _WINDBIRD:74AUP1G32 U?
+U 1 1 6204A2CB
+P 5625 6825
+F 0 "U?" H 5450 6650 50  0000 C CNN
+F 1 "74AUP1G32" H 5625 6550 50  0000 C CNN
+F 2 "" H 5625 6825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5625 6825 50  0001 C CNN
+	1    5625 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 7000 5625 6925
+Text Label 5525 6650 2    50   ~ 0
+VMAIN
+Wire Wire Line
+	5625 6650 5625 6725
+Wire Wire Line
+	5525 6650 5625 6650
+Text Notes 5550 6850 0    50   ~ 0
+OR
+$Comp
+L _WINDBIRD:R R?
+U 1 1 6211D472
+P 5000 7200
+F 0 "R?" V 4925 7150 40  0000 L CNN
+F 1 "1M" V 5000 7150 40  0000 L CNN
+F 2 "" V 4930 7200 30  0000 C CNN
+F 3 "" H 5000 7200 30  0000 C CNN
+	1    5000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L _WINDBIRD:R R12
+U 1 1 61CE1FEC
+P 6550 6000
+F 0 "R12" V 6630 6000 40  0000 C CNN
+F 1 "1M" V 6557 6001 40  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 6000 30  0001 C CNN
+F 3 "~" H 6550 6000 30  0000 C CNN
+	1    6550 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L _WINDBIRD:R R?
+U 1 1 6212CEE5
+P 5175 7200
+F 0 "R?" V 5100 7150 40  0000 L CNN
+F 1 "1M" V 5175 7150 40  0000 L CNN
+F 2 "" V 5105 7200 30  0000 C CNN
+F 3 "" H 5175 7200 30  0000 C CNN
+	1    5175 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 6775 5175 6775
+Wire Wire Line
+	4825 6875 5000 6875
+Wire Wire Line
+	5000 6950 5000 6875
+Connection ~ 5000 6875
+Wire Wire Line
+	5000 6875 5325 6875
+Wire Wire Line
+	5175 6950 5175 6775
+Connection ~ 5175 6775
+Wire Wire Line
+	5175 6775 5325 6775
+$Comp
+L _WINDBIRD:GND #PWR?
+U 1 1 62156143
+P 5000 7450
+F 0 "#PWR?" H 5000 7450 30  0001 C CNN
+F 1 "GND" H 5000 7380 30  0001 C CNN
+F 2 "" H 5000 7450 60  0000 C CNN
+F 3 "" H 5000 7450 60  0000 C CNN
+	1    5000 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L _WINDBIRD:GND #PWR?
+U 1 1 62156858
+P 5175 7450
+F 0 "#PWR?" H 5175 7450 30  0001 C CNN
+F 1 "GND" H 5175 7380 30  0001 C CNN
+F 2 "" H 5175 7450 60  0000 C CNN
+F 3 "" H 5175 7450 60  0000 C CNN
+	1    5175 7450
+	1    0    0    -1  
+$EndComp
+Text Label 6175 7675 0    60   ~ 0
+TD_TX
+Text Label 4825 7675 2    60   ~ 0
+FTDI_RX
+$Comp
+L _WINDBIRD:R R13
+U 1 1 61E98D49
+P 5500 7675
+F 0 "R13" V 5425 7675 40  0000 C CNN
+F 1 "10k" V 5500 7675 40  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 7675 30  0001 C CNN
+F 3 "" H 5500 7675 30  0000 C CNN
+	1    5500 7675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4825 7675 5250 7675
+Wire Wire Line
+	5750 7675 6175 7675
+Text Notes 4625 8125 0    39   ~ 0
+GPS will not work when FTDI TX wire is plugged\nFTDI cable should only be used for firmware upgrades (GPS off)\nPull-down resistor on GPS_TX might not be required.
+Text Notes 5675 6675 0    39   ~ 0
+Generic part, check pinout !\nActs as a level shifter + multiplexer
+Text Label 2400 7050 0    60   ~ 0
+FTDI_TX
+Text Label 2400 7150 0    60   ~ 0
+FTDI_RX
 $EndSCHEMATC
