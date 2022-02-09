@@ -190,7 +190,7 @@ Wire Wire Line
 	1000 5250 1050 5250
 Wire Wire Line
 	1050 5250 2100 5250
-Text Label 3725 3100 0    60   ~ 0
+Text Label 3725 3500 0    60   ~ 0
 GPS_ON
 Wire Wire Line
 	1050 5350 1050 5250
@@ -243,10 +243,6 @@ Text Notes 3500 5300 0    50   ~ 0
 Antenna
 Text Notes 2000 5000 0    50   ~ 0
 Coaxial uFL connector
-Wire Wire Line
-	2025 2350 2025 2900
-Wire Wire Line
-	2025 2900 2225 2900
 $Comp
 L _WINDBIRD:MC6470 U2
 U 1 1 61C7C598
@@ -468,7 +464,7 @@ Wire Wire Line
 	9500 2750 9500 2800
 Wire Notes Line
 	4950 6350 11100 6350
-Text Label 3725 3200 0    60   ~ 0
+Text Label 2225 2900 2    60   ~ 0
 VAUX_ON
 $Comp
 L _WINDBIRD:TPS82740A U1
@@ -556,7 +552,7 @@ Wire Wire Line
 	7450 2200 7550 2200
 Wire Notes Line
 	7850 750  7850 3200
-Text Label 2025 2350 2    39   ~ 0
+Text Label 3725 2700 0    60   ~ 0
 VBAT_SENSE
 Wire Wire Line
 	6300 2100 6450 2100
@@ -2142,9 +2138,9 @@ F 3 "~" H 9875 1325 30  0000 C CNN
 $EndComp
 Text Label 9125 1325 2    60   ~ 0
 LED_GREEN
-Text Label 3725 2700 0    60   ~ 0
+Text Label 3725 3100 0    60   ~ 0
 LED_RED
-Text Label 3725 2800 0    60   ~ 0
+Text Label 3725 3200 0    60   ~ 0
 LED_GREEN
 $Comp
 L _WINDBIRD:R R3
@@ -3010,13 +3006,7 @@ F 3 "~" H 4850 2855 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5450 2100
-Wire Wire Line
-	3725 3500 4700 3500
-Wire Wire Line
-	4700 3500 4700 2600
-Wire Wire Line
-	4700 2600 4850 2600
-Text Label 4225 3500 2    50   ~ 0
+Text Label 3725 2800 0    60   ~ 0
 VCAP_SENSE
 $Comp
 L _WINDBIRD:SIA517DJ M1
@@ -5468,4 +5458,10 @@ Text Label 7550 2700 0    50   ~ 0
 VAUX_ON
 Wire Wire Line
 	7550 2700 7450 2700
+Wire Wire Line
+	3725 2800 4550 2800
+Wire Wire Line
+	4550 2800 4550 2600
+Wire Wire Line
+	4550 2600 4850 2600
 $EndSCHEMATC
