@@ -283,8 +283,6 @@ F 3 "" H 10850 3150 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	10850 2900 10850 3150
-Text Label 8550 3050 0    50   ~ 0
-CMP_ON
 $Comp
 L _WINDBIRD:C C2
 U 1 1 61CA9248
@@ -347,8 +345,6 @@ F 3 "" H 5250 4150 60  0000 C CNN
 $EndComp
 Text Label 5200 3850 0    60   ~ 0
 PULSE_SW
-Text Label 5200 3950 0    60   ~ 0
-VMAIN
 $Comp
 L _WINDBIRD:CONN_3 J2
 U 1 1 5501A2DA
@@ -473,9 +469,7 @@ Wire Wire Line
 Wire Notes Line
 	4950 6350 11100 6350
 Text Label 3725 3200 0    60   ~ 0
-CMP_ON
-NoConn ~ 7450 2450
-NoConn ~ 7450 2700
+VAUX_ON
 $Comp
 L _WINDBIRD:TPS82740A U1
 U 1 1 61DD5AF8
@@ -2960,11 +2954,8 @@ Wire Wire Line
 Connection ~ 9050 3050
 Wire Wire Line
 	9050 3050 9200 3050
-Connection ~ 8925 3050
 Wire Wire Line
 	8925 3050 9050 3050
-Wire Wire Line
-	8550 3050 8925 3050
 Wire Wire Line
 	8925 3450 8925 3525
 Wire Wire Line
@@ -5358,8 +5349,6 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5625 6825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5625 7000 5625 6925
-Text Label 5525 6650 2    50   ~ 0
-VMAIN
 Wire Wire Line
 	5625 6650 5625 6725
 Wire Wire Line
@@ -5462,4 +5451,21 @@ Text Label 2400 7050 0    60   ~ 0
 FTDI_TX
 Text Label 2400 7150 0    60   ~ 0
 FTDI_RX
+Text Label 7550 2450 0    60   ~ 0
+VAUX
+Text Label 5200 3950 0    60   ~ 0
+VAUX
+Text Label 5525 6650 2    60   ~ 0
+VAUX
+Text Label 8700 3050 2    60   ~ 0
+VAUX
+Wire Wire Line
+	8700 3050 8925 3050
+Connection ~ 8925 3050
+Wire Wire Line
+	7450 2450 7550 2450
+Text Label 7550 2700 0    50   ~ 0
+VAUX_ON
+Wire Wire Line
+	7550 2700 7450 2700
 $EndSCHEMATC
