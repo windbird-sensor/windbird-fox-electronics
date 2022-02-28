@@ -598,7 +598,7 @@ L _WINDBIRD:R R7
 U 1 1 6208DA56
 P 5400 1400
 F 0 "R7" V 5500 1400 40  0000 C CNN
-F 1 "47 1/2W" V 5400 1400 40  0000 C CNN
+F 1 "22 1/10W" V 5400 1400 40  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 5330 1400 30  0001 C CNN
 F 3 "" H 5400 1400 30  0000 C CNN
 	1    5400 1400
@@ -2894,14 +2894,12 @@ Wire Wire Line
 Wire Wire Line
 	6200 2100 6200 2850
 Text Notes 5000 1925 0    28   ~ 0
-When cap is void (new battery insertion)\nthe bypass is active.\nWe have Ibat peak up to 106mA (<230 max Ibat spec).\nand vcap reaches 2.3V in 36s
+When cap is void (new battery insertion)\nthe bypass is active.\nWe have Ibat peak about 60mA (<230 max Ibat spec).\nso P=rI² = 0.1W
 Wire Wire Line
 	6075 1125 6300 1125
 Wire Wire Line
 	6300 1125 6300 2100
 Connection ~ 6300 1125
-Text Notes 5050 1550 0    50   ~ 0
-1/2W !
 $Comp
 L _WINDBIRD:R R18
 U 1 1 61DC179C
