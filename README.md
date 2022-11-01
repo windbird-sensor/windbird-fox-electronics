@@ -2,6 +2,8 @@
 
 This repository contains the electronic parts of the Windbird wind sensor.
 
+![carte-wb-0 2](https://user-images.githubusercontent.com/1681443/199285619-ba5c6d7a-b398-466e-abd2-0d190b02ab8b.jpg)
+
 - main/            : contains the main PCB 
 - front/           : contains the PCB for the rotation sensor
 - tail/            : contains the PCB for the tail and antenna
