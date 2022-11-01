@@ -1,7 +1,5 @@
 # windbird-electronics
 
-# THIS IS A WORK IN PROGRESS
-
 This repository contains the electronic parts of the Windbird wind sensor.
 
 - main/            : contains the main PCB 
@@ -13,10 +11,7 @@ This repository contains the electronic parts of the Windbird wind sensor.
 
 The development branch is named **'main'**
 
-**Tag list:**
-- LEGACY : more or less the initial schematic inherited from Pioupiou
-
-
+Releases : https://github.com/windbird-sensor/windbird-fox-electronics/releases
 
 ## Reminders about versioning with git
 
