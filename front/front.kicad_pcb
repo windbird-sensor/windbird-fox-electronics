@@ -135,10 +135,10 @@
     (pad 1 smd rect (at -0.9525 1.05664 270) (size 0.59944 1.00076) (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect (at 0 -1.05664 270) (size 0.59944 1.00076) (layers F.Cu F.Paste F.Mask))
     (pad 3 smd rect (at 0.9525 1.05664 270) (size 0.59944 1.00076) (layers F.Cu F.Paste F.Mask))
-    (model smd/smd_transistors/sot23.wrl
+    (model /usr/share/kicad/modules/Package_TO_SOT_SMD.3dshapes/SOT-23.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 -90))
     )
   )
 
@@ -184,9 +184,9 @@
     (fp_line (start -1.19888 0.635) (end -1.19888 -0.635) (layer F.SilkS) (width 0.11938))
     (pad 1 smd rect (at -0.762 0 90) (size 0.635 1.143) (layers F.Cu F.Paste F.Mask))
     (pad 2 smd rect (at 0.762 0 90) (size 0.635 1.143) (layers F.Cu F.Paste F.Mask))
-    (model smd\capacitors\C0603.wrl
-      (offset (xyz 0 0 0.02539999961853028))
-      (scale (xyz 0.5 0.5 0.5))
+    (model /usr/share/kicad/modules/Capacitor_SMD.3dshapes/C_0603_1608Metric.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
