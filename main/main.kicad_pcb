@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 0.2)
+    (last_trace_width 0.15)
     (user_trace_width 0.1)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
@@ -2495,7 +2495,6 @@
   (segment (start 127.905 89.75) (end 126.635 89.75) (width 0.8) (layer 1.F.Cu) (net 1) (status 30))
   (via (at 129.1465 88.57) (size 0.62) (drill 0.25) (layers 1.F.Cu 4.B.Cu) (net 1))
   (segment (start 127.8555 88.57) (end 129.1465 88.57) (width 0.8) (layer 1.F.Cu) (net 1) (status 10))
-  (segment (start 110.46 98.5) (end 110.44 98.52) (width 0.2) (layer 4.B.Cu) (net 16) (status 30))
   (segment (start 115.205 87.955) (end 115.2 87.95) (width 0.4) (layer 1.F.Cu) (net 1))
   (segment (start 115.205 89.75) (end 115.205 87.955) (width 0.4) (layer 1.F.Cu) (net 1) (status 10))
   (segment (start 143.415 90.4) (end 143.45 90.365) (width 0.2) (layer 1.F.Cu) (net 1) (status 30))
@@ -2787,6 +2786,7 @@
   (segment (start 114.775 94.725) (end 121.55 87.95) (width 0.2) (layer 3.Pwr.Cu) (net 15))
   (segment (start 113.52 95.98) (end 114.775 94.725) (width 0.2) (layer 3.Pwr.Cu) (net 15))
   (segment (start 110.15 95.98) (end 113.52 95.98) (width 0.2) (layer 3.Pwr.Cu) (net 15) (status 10))
+  (segment (start 110.46 98.5) (end 110.44 98.52) (width 0.2) (layer 4.B.Cu) (net 16) (status 30))
   (via (at 122.85 87.95) (size 0.62) (drill 0.25) (layers 1.F.Cu 4.B.Cu) (net 16))
   (segment (start 122.825 87.975) (end 122.85 87.95) (width 0.3) (layer 1.F.Cu) (net 16))
   (segment (start 122.825 89.75) (end 122.825 87.975) (width 0.4) (layer 1.F.Cu) (net 16) (status 10))
