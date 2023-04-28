@@ -2349,21 +2349,6 @@ F 3 "" H 5000 7200 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4750 7625 5500 7625
-Wire Wire Line
-	6000 7625 6425 7625
-$Comp
-L _WINDBIRD:R R13
-U 1 1 61E98D49
-P 5750 7625
-F 0 "R13" V 5675 7625 40  0000 C CNN
-F 1 "200" V 5750 7625 40  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5680 7625 30  0001 C CNN
-F 3 "" H 5750 7625 30  0000 C CNN
-	1    5750 7625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
 	4750 7100 5425 7100
 Wire Wire Line
 	5250 7025 5250 7200
@@ -2390,4 +2375,6 @@ Wire Wire Line
 Connection ~ 5425 6525
 Wire Wire Line
 	5425 6525 5875 6525
+Wire Wire Line
+	4750 7625 6425 7625
 $EndSCHEMATC
