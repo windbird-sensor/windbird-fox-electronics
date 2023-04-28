@@ -1,35 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP 74AHC1G32
-D Single OR Gate, Low-Voltage CMOS
-K Single Gate OR LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AHCT1G32
-D Single OR Gate, Low-Voltage CMOS
-K Single Gate OR LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AUC1G32
-D Single OR Gate, Low-Voltage CMOS
-K Single Gate OR LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74AUP1G32
-D Single OR Gate, Low-Voltage CMOS
-K Single Gate OR LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
-$CMP 74LVC1G32
-D Single OR Gate, Low-Voltage CMOS
-K Single Gate OR LVC CMOS
-F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
-$ENDCMP
-#
 $CMP Conn_02x07_Odd_Even
 D Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
