@@ -42,4 +42,10 @@ K Solder Jumper SPDT
 F ~
 $ENDCMP
 #
+$CMP WB_EXTENSION_BOARD
+D Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 #End Doc Library
