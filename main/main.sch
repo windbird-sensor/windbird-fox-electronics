@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Windbird Fox main board"
-Date "2023-01-25"
-Rev "1.0-rc1"
+Date "2023-05-02"
+Rev "1.0-rc2"
 Comp "OpenWindMap"
 Comment1 "Main board"
 Comment2 "designed by : Nicolas Baldeck & Pascal Caunegre"
