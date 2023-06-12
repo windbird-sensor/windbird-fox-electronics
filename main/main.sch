@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Windbird Fox main board"
-Date "2023-05-02"
-Rev "1.0-rc2"
+Date "2023-06-12"
+Rev "1.0"
 Comp "OpenWindMap"
 Comment1 "Main board"
 Comment2 "designed by : Nicolas Baldeck & Pascal Caunegre"
@@ -1522,8 +1522,8 @@ F 3 "" H 5250 6775 30  0000 C CNN
 	1    5250 6775
 	1    0    0    -1  
 $EndComp
-Text Notes 5800 7175 0    50   ~ 0
-OR
+Text Notes 5775 7175 0    50   ~ 0
+AND
 Wire Wire Line
 	5875 7325 5875 7250
 Text Notes 4450 6375 0    60   ~ 0
@@ -2299,22 +2299,11 @@ F 3 "" H 5425 6775 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L _WINDBIRD:74AUP1G08 U4
-U 1 1 6204A2CB
-P 5875 7150
-F 0 "U4" H 5700 6975 50  0000 C CNN
-F 1 "SN74AUP1G08DBVR" H 5875 6875 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5875 7150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5875 7150 50  0001 C CNN
-	1    5875 7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L _WINDBIRD:R R2
 U 1 1 62795835
 P 5000 7200
-F 0 "R2" V 4925 7200 40  0000 C CNN
-F 1 "200" V 5000 7200 40  0000 C CNN
+F 0 "R2" V 5075 7200 40  0000 C CNN
+F 1 "200R" V 5000 7200 40  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4930 7200 30  0001 C CNN
 F 3 "" H 5000 7200 30  0000 C CNN
 	1    5000 7200
@@ -2417,4 +2406,15 @@ Wire Wire Line
 Connection ~ 3025 1125
 Wire Wire Line
 	2350 1125 2625 1125
+$Comp
+L _WINDBIRD:74AUP1G08 U4
+U 1 1 64893A22
+P 5875 7150
+F 0 "U4" H 5800 7300 50  0000 C CNN
+F 1 "SN74AUP1G08DBVR" H 5875 6850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5875 7150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5875 7150 50  0001 C CNN
+	1    5875 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
