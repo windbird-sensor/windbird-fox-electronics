@@ -1,4 +1,4 @@
-update=mer. 25 janv. 2023 14:30:19
+update=mer. 28 juin 2023 19:31:12
 version=1
 last_client=kicad
 [general]
@@ -87,7 +87,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=1.F.Cu
 Type=0
@@ -97,8 +97,8 @@ Name=2.Gnd.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=3.Pwr.Cu
-Type=1
+Name=3.In.Cu
+Type=0
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
