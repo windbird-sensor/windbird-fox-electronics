@@ -2431,7 +2431,7 @@
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 00000000-0000-0000-0000-000064a33508))
   (gr_line (start 135.993018 135.199007) (end 145.753217 232.800992)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 00000000-0000-0000-0000-000064a33514))
-  (gr_arc (start 152.993018 135.199008) (mid 152.983092 135) (end 152.993018 134.800993)
+  (gr_arc (start 135.993018 135.199008) (mid 135.983092 135.000001) (end 135.993018 134.800993)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 00000000-0000-0000-0000-000064a33517))
   (gr_arc (start 51.467094 147) (mid 50.458882 148.148783) (end 49.188961 147.298198)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 00000000-0000-0000-0000-000064a3351a))
